@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Cadastro</title>
+    </head>
+
+    <body>
+
+        <h1>Formulário Kenzie</h1>
+        <form>
+            <label for="nome"><strong>Nome:</strong></label>
+            <br>
+            <input type="text" id="nome" name="nomeURL" required="true" placeholder="Digite seu nome...">
+
+            <br><br>
+
+            <label for="email"><strong>E-mail</strong></label>
+            <br>
+            <input type="text" id="email" name="emailURL" required="true" placeholder="Digite seu e-mail...">
+
+            <br><br>
+
+            <label for="descrição"><strong>Descrição</strong></label>
+            <br>
+            <textarea id="descrição" placeholder="Conte-nos sobre você..." required="true" cols="20" rows="5"></textarea>
+            <br><br>
+
+            <label for="módulo"><strong>Módulo</strong></label>
+            <br>
+            <select name="moduloURL" id="módulo" required="true">
+                <option value="">--Selecione seu módulo--</option>
+                <option value="m1">--M1--</option>
+                <option value="m2">--M2--</option>
+                <option value="m3">--M3--</option>
+            </select>
+            <br><br>
+
+            <label for="senha"><strong>Senha</strong></label>
+            <br>
+            <input type="password" id="senha" required="true" placeholder="Insira sua senha..." name="senhaURL">
+            <br><br>
+            <label for="confirmarsenha"><strong>Confirmar senha</strong></label>
+            <br>
+            <input type="password" id="confirmarsenha" required="true" placeholder="Insira sua senha novamente..." name="confsenhaURL">
+
+            <br><br>
+
+            <p><strong>Deseja receber novidades por e-mail?</strong></p>
+            <input type="radio" name="novidades" id="sim" required="true" value="sim">
+            <label for="sim">Sim</label>
+
+            
+
+            <input type="radio" name="novidades" id="não" required="true" value="nao">
+            <label for="não">Não</label>
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+            
+        </form>   
+    </body> 
+</html>
